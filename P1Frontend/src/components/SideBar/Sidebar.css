@@ -1,0 +1,111 @@
+/* General Sidebar Styles */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #888;
+    padding: 0px;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    margin-bottom: 0px;
+  }
+
+  .user-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -5px;
+  }
+  .logout {
+    color: blue;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: -30px;
+    cursor: pointer;
+  }
+
+  .bar {
+    transform: translate(16px, 16px);
+    width: 550%;
+    height: 5px;
+    background-color: #333;
+    transition: all 0.1s ease;
+  }
+  
+  /* Transformations for the Hamburger Icon */
+  .bar1 {
+    width: 100%;
+    transform: translate(16px, 16px) rotate(90deg) ;
+  }
+  
+  .bar2 {
+    width: 100%;
+    transform:  translate(4px, 8px) rotate(90deg) ;
+  }
+  
+  .bar3 {
+    width: 100%;
+    transform: translate(-8px, 0px) rotate(90deg) ;
+  }
+
+
+  /* Collapsed State */
+  .sidebar.collapsed {
+    width: 50px; /* Adjust this width for the collapsed state */
+    padding: 10px 5px; /* Adjust padding if necessary */
+  }
+  
+  /* Toggle Button */
+  .toggle-button {
+    display: block; /* Ensure it's visible */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* Ensure it's on top of other elements */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px; /* Adjust top margin to account for the toggle button */
+    width: 100%;
+  }
+  
+  /* Nav Link Styles */
+  .nav-link {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #666;
+  }
+  
+  /* Active Link Styles */
+  .active-link {
+    background-color: #666;
+  }
+  
